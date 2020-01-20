@@ -22,9 +22,8 @@
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25);
-    0.125em 0.125em 0.25em rgba(0,0,0,.15);
-
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
 @media (min-width: 800px) {
@@ -40,7 +39,7 @@
 
 body {
     background: var(--clr-light);
-    color: var(--clr-accent);
+    color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -59,8 +58,8 @@ img {
 strong { font-weight: var(--fw-bold) }
 
 :focus {
-  outline: 3px solid var(--clr-accent);
-  outline-offset: 3px;
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
 }
 
 /* Typography */
@@ -84,10 +83,6 @@ h3 { font-size: var(--fs-h3) }
 .section__title--intro {
     font-weight: var(--fw-reg);
 }
-.section__subtitle--intro {
-    display: inline-block;
-}
-
 
 .section__title--intro strong {
     display: block;
@@ -100,7 +95,7 @@ h3 { font-size: var(--fs-h3) }
 
 .section__subtitle--intro,
 .section__subtitle--about {
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
@@ -131,8 +126,8 @@ h3 { font-size: var(--fs-h3) }
 .btn:hover {
     transform: scale(1.1);
 }
-
 /* header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -198,7 +193,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -220,12 +215,19 @@ header {
 
 /*  Intro section  */
 
+
 .intro {
     position: relative;
 }
+
 .intro__img {
     box-shadow: var(--bs);
 }
+
+.section__subtitle--intro {
+    display: inline-block;
+}
+
 @media (min-width: 600px) {
     .intro {
         display: grid;
@@ -282,16 +284,19 @@ header {
     opacity: 0.25;
 }
 
+.services {
+    margin-bottom: 4em;
+}
+
 .service {
     max-width: 500px;
     margin: 0 auto;
 }
-.services {
-    margin-bottom: 4em;
-}
+
 @media (min-width: 800px) {
     .services {
         display: flex;
+        max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -299,12 +304,17 @@ header {
     .service + .service {
         margin-left: 2em;
     }
+}
 
 
-    .about-me__img {
-        box-shadow: var(--bs);
-    }
+.about-me {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
+.about-me__img {
+    box-shadow: var(--bs);
+}
 
 @media (min-width: 600px) {
     .about-me {
@@ -336,6 +346,8 @@ header {
         position: relative;
         z-index: 2;
     }
+}
+
     /* My Work */
 
 .my-work {
