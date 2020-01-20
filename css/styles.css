@@ -204,8 +204,8 @@ nav { display: none; }
 @media (min-width: 800px) {
     .services {
         display: flex;
-        max-width: 1000px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .service + .service {
