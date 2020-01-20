@@ -40,7 +40,7 @@
 
 body {
     background: var(--clr-light);
-    color: var(--clr-dark);
+    color: var(--clr-accent);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -280,5 +280,5 @@ nav { display: none; }
   .portfolio__img:hover {
       transform: scale(1.2);
       opacity: .75;
-  }  
+  }
 }
