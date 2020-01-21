@@ -7,15 +7,15 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Lora', serif;
+    --ff-secondary: 'Roboto Slab', serif;
 
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-light: #fff; /* to change the color of the site */
+    --clr-dark: #303030; /* to change the color of the site */
+    --clr-accent: #16e0bd; /* to change the color of the site */
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
